@@ -8,47 +8,45 @@
           <mxGeometry x="20" y="20" width="820" height="1060" as="geometry" />
         </mxCell>
         <mxCell id="17acba5748e5396b-20" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;JobController&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" parent="1" vertex="1">
-          <mxGeometry x="355" y="87" width="160" height="163" as="geometry">
+          <mxGeometry x="310" y="80" width="250" height="180" as="geometry">
             <mxRectangle x="355" y="87" width="90" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="17acba5748e5396b-21" value="- currentJob: Job&lt;div&gt;- jobOffers: List &amp;lt;Job&amp;gt;&lt;/div&gt;&lt;div&gt;+ enterCurrentJob()&lt;/div&gt;&lt;div&gt;+ saveCurrentJob()&lt;/div&gt;&lt;div&gt;+ addJobOffer()&lt;/div&gt;&lt;div&gt;+ getJobOffers(): List&lt;/div&gt;&lt;div&gt;+ validateJob(Job): boolean&lt;/div&gt;&lt;div&gt;+ canCompare(): boolean&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17acba5748e5396b-20" vertex="1">
-          <mxGeometry y="26" width="160" height="134" as="geometry" />
+        <mxCell id="17acba5748e5396b-21" value="- currentJob: Job&lt;div&gt;- jobOffers: List &amp;lt;Job&amp;gt;&lt;/div&gt;&lt;div&gt;+ enterCurrentJob()&lt;/div&gt;&lt;div&gt;+ saveCurrentJob()&lt;/div&gt;&lt;div&gt;+ addJobOffer()&lt;/div&gt;&lt;div&gt;+ getJobOffers(): List&lt;/div&gt;&lt;div&gt;+&amp;nbsp;&lt;span style=&quot;text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ComparisonSettings:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ComparisonSettings&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17acba5748e5396b-20" vertex="1">
+          <mxGeometry y="26" width="250" height="154" as="geometry" />
         </mxCell>
         <mxCell id="17acba5748e5396b-30" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;Job&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" parent="1" vertex="1">
-          <mxGeometry x="520" y="280" width="160" height="160" as="geometry" />
+          <mxGeometry x="540" y="280" width="210" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="17acba5748e5396b-31" value="- title: String&lt;div&gt;- company: String&lt;/div&gt;&lt;div&gt;- location: CityState&lt;/div&gt;&lt;div&gt;- costOfLiving: Double&lt;/div&gt;&lt;div&gt;- yearlySalary: double&lt;/div&gt;&lt;div&gt;+getAdjustedSalary(): double&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17acba5748e5396b-30" vertex="1">
-          <mxGeometry y="26" width="160" height="134" as="geometry" />
+        <mxCell id="17acba5748e5396b-31" value="- title: String&lt;div&gt;- company: String&lt;/div&gt;&lt;div&gt;- City: String&lt;/div&gt;&lt;div&gt;- State: String&lt;/div&gt;&lt;div&gt;- costOfLivingIndex: double&lt;/div&gt;&lt;div&gt;- yearlySalary: double&lt;/div&gt;&lt;div&gt;- yearlyBonus: double&lt;/div&gt;&lt;div&gt;- healthInsurance: double&lt;/div&gt;&lt;div&gt;+ getAdjustedSalary(): double&lt;/div&gt;&lt;div&gt;+ getAdjustedBonus(): double&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17acba5748e5396b-30" vertex="1">
+          <mxGeometry y="26" width="210" height="164" as="geometry" />
         </mxCell>
-        <mxCell id="17acba5748e5396b-44" value="JobScoreCalculator" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" parent="1" vertex="1">
-          <mxGeometry x="560" y="860" width="240" height="150" as="geometry" />
+        <mxCell id="17acba5748e5396b-44" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;JobScoreCalculator&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" parent="1" vertex="1">
+          <mxGeometry x="560" y="850" width="240" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="17acba5748e5396b-45" value="+ calculatesScore(Job, ComparisonSettings): double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17acba5748e5396b-44" vertex="1">
+        <mxCell id="17acba5748e5396b-45" value="+ calculatesScore(Job: Job, settings: ComparisonSettings): double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="17acba5748e5396b-44" vertex="1">
           <mxGeometry y="26" width="240" height="124" as="geometry" />
         </mxCell>
-        <mxCell id="5d2195bd80daf111-1" value="JobComparator" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" parent="1" vertex="1">
-          <mxGeometry x="560" y="710" width="240" height="120" as="geometry" />
+        <mxCell id="5d2195bd80daf111-1" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;JobComparator&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" parent="1" vertex="1">
+          <mxGeometry x="30" y="690" width="270" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="5d2195bd80daf111-2" value="+ rankJobs(List&amp;lt;Job&amp;gt;, Comparison Settings)&lt;div&gt;+ compareJobs(Job1, Job2)&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5d2195bd80daf111-1" vertex="1">
-          <mxGeometry y="26" width="240" height="74" as="geometry" />
+        <mxCell id="5d2195bd80daf111-2" value="+ rankJobs(jobs: List&amp;lt;Job&amp;gt;, settings: ComparisonSettings): List&amp;lt;Job&amp;gt;&lt;div&gt;+ compareJobs(Job1: job, Job2: job, settings: ComparisonSettings): ComparisonResults&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5d2195bd80daf111-1" vertex="1">
+          <mxGeometry y="26" width="270" height="74" as="geometry" />
         </mxCell>
         <mxCell id="5d2195bd80daf111-5" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;ComparisonSettings&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" parent="1" vertex="1">
-          <mxGeometry x="620" y="490" width="160" height="83" as="geometry" />
+          <mxGeometry x="600" y="509" width="160" height="83" as="geometry" />
         </mxCell>
-        <mxCell id="5d2195bd80daf111-6" value="- salaryWeight: int = 1&lt;div&gt;- bonusWeight: int = 1&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5d2195bd80daf111-5" vertex="1">
+        <mxCell id="5d2195bd80daf111-6" value="- salaryWeight: int = 1&lt;div&gt;- bonusWeight: int = 1&lt;/div&gt;&lt;div&gt;- insuranceWeight: int = 1&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="5d2195bd80daf111-5" vertex="1">
           <mxGeometry y="26" width="160" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="5d2195bd80daf111-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;App&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;---------------------------&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ start(): void&lt;br&gt;+ saveState()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ loadSate()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
-          <mxGeometry x="60" y="87" width="110" height="140" as="geometry" />
+        <mxCell id="5d2195bd80daf111-18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;App&lt;/i&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;---------------------------------------------------&lt;/i&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ start(): void&lt;br&gt;+ processCurrentJob(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ processJobOffer(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ processComparisonSettings(): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ loadSate()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
+          <mxGeometry x="36" y="80" width="204" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-1" value="" style="endArrow=open;startArrow=open;html=1;rounded=0;startFill=0;dashed=1;exitX=0;exitY=0.808;exitDx=0;exitDy=0;exitPerimeter=0;endFill=0;" edge="1" parent="1" target="5d2195bd80daf111-18">
+        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-1" value="" style="endArrow=open;startArrow=open;html=1;rounded=0;startFill=0;dashed=1;endFill=0;exitX=-0.01;exitY=0.343;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="17acba5748e5396b-21">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="355" y="160.00800000000004" as="sourcePoint" />
-            <mxPoint x="290" y="340" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="300" y="160" />
-            </Array>
+            <mxPoint x="230" y="160" as="sourcePoint" />
+            <mxPoint x="240" y="160" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-2" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1" source="5d2195bd80daf111-10">
@@ -57,51 +55,75 @@
             <mxPoint x="430.72333333333347" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-3" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-3" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=0.196;exitY=0.994;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="17acba5748e5396b-21">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="439.2818888888892" y="251" as="sourcePoint" />
-            <mxPoint x="440" y="481" as="targetPoint" />
+            <mxPoint x="359" y="270" as="sourcePoint" />
+            <mxPoint x="359" y="481" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5d2195bd80daf111-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;SettingController&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- settings: ComparisonSettings&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ adjustSettings():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ saveSettings():&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getSettings():&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ComparisonSettings&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1" parent="1" vertex="1">
-          <mxGeometry x="340" y="480" width="210" height="170" as="geometry" />
+          <mxGeometry x="240" y="480" width="210" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-5" value="" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;entryX=-0.012;entryY=0.41;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-5" value="" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="442" y="360" as="sourcePoint" />
-            <mxPoint x="520.0799999999999" y="360.94000000000005" as="targetPoint" />
+            <mxPoint x="360" y="358" as="sourcePoint" />
+            <mxPoint x="538" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-6" value="" style="endArrow=open;startArrow=open;html=1;rounded=0;startFill=0;dashed=1;endFill=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="620" y="540" as="sourcePoint" />
-            <mxPoint x="550" y="540" as="targetPoint" />
+            <mxPoint x="600" y="560" as="sourcePoint" />
+            <mxPoint x="450" y="560" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="590" y="540" />
+              <mxPoint x="490" y="560" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-7" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="438.50188888888925" y="650" as="sourcePoint" />
-            <mxPoint x="439.22" y="880" as="targetPoint" />
+            <mxPoint x="400.50188888888925" y="650" as="sourcePoint" />
+            <mxPoint x="401.22" y="880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-8" value="" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="521.9200000000001" y="760" as="sourcePoint" />
-            <mxPoint x="560" y="761" as="targetPoint" />
+            <mxPoint x="400" y="761" as="sourcePoint" />
+            <mxPoint x="300" y="760" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="440" y="761" />
+              <mxPoint x="320" y="761" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-9" value="" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="521.9200000000001" y="874" as="sourcePoint" />
-            <mxPoint x="560" y="875" as="targetPoint" />
+            <mxPoint x="521.9200000000001" y="875" as="sourcePoint" />
+            <mxPoint x="560" y="876" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="440" y="875" />
+              <mxPoint x="400" y="876" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-10" value="&lt;font style=&quot;font-size: 12px;&quot; face=&quot;Helvetica&quot;&gt;ComparisonResults&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="30" y="910" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-11" value="- job1: Job&lt;div&gt;- job2: Job&lt;/div&gt;&lt;div&gt;- scoreJob1: double&lt;/div&gt;&lt;div&gt;- scoreJob2: double&lt;/div&gt;&lt;div&gt;+ displayComparisonTable(): void&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="wpZXHxEVDuKEj6VhSZ7Y-10">
+          <mxGeometry y="26" width="240" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-12" value="" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;exitX=0.008;exitY=0.677;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="17acba5748e5396b-45">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="961" as="sourcePoint" />
+            <mxPoint x="270" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="961" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wpZXHxEVDuKEj6VhSZ7Y-13" value="" style="endArrow=open;html=1;rounded=0;dashed=1;endFill=0;entryX=0.542;entryY=-0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="840" as="sourcePoint" />
+            <mxPoint x="160.07999999999993" y="910" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="820" />
             </Array>
           </mxGeometry>
         </mxCell>
